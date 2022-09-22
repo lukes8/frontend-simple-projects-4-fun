@@ -1,6 +1,7 @@
 const imgs = document.getElementById('imgs')
 const left = document.getElementById('left')
 const right = document.getElementById('right')
+const middle = document.getElementById('middle')
 
 const imgList = document.querySelectorAll('#imgs img')
 
@@ -34,6 +35,10 @@ right.addEventListener('click', ()=> {
     idx++
     changeImage()
     resetInterval()
+})
+
+middle.addEventListener('click', ()=> {
+    clearInterval(interval)
 })
 
 function resetInterval() {
