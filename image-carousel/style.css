@@ -11,6 +11,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    margin-top: 15px;
 }
 
 img {
@@ -59,7 +60,7 @@ img {
     outline: none;
 }
 
-.imgc__overview {
+.imgc__overview1 {
     position: absolute;
     bottom: 0;
     left: 0;
