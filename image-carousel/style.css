@@ -14,6 +14,7 @@ body {
     margin-top: 15px;
 }
 
+
 img {
     height: 500px;
     width: 500px;
@@ -30,6 +31,7 @@ img {
 
 .image-container {
     display: flex;
+
     /* flex-wrap: wrap; */
     /* height: 540px; */
     transform: translateX(0);
@@ -50,6 +52,7 @@ img {
     border: 0;
     padding: .7rem .6rem;
     cursor: pointer;
+    border-radius: 0 !important;
 }
 
 .btn:hover {
@@ -60,56 +63,87 @@ img {
     outline: none;
 }
 
-.imgc__overview1 {
+
+.imgc__overview {
     position: absolute;
     bottom: 0;
     left: 0;
     color: black;
     padding: .5rem 1.2rem;
     background-color: rgba(255, 255, 255, 0.6);
-    max-height: 30%;
+    width: 100%;
+    max-height: 40%;
     /* overflow: scroll; */
+}
+
+.imgc__overview1 {
+    transform: translateX(0px);
 }
 
 .imgc__overview2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: black;
-    padding: .5rem 1.2rem;
-    background-color: rgba(255, 255, 255, 0.6);
     transform: translateX(500px);
-    width: 100%;
-    max-height: 30%;
-    /* overflow: scroll; */
+
 }
 
 .imgc__overview3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: black;
-    padding: .5rem 1.2rem;
-    background-color: rgba(255, 255, 255, 0.6);
     transform: translateX(1000px);
-    width: 100%;
-    max-height: 30%;
-    /* overflow: scroll; */
 }
 
 .imgc__overview4 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: black;
-    padding: .5rem 1.2rem;
-    background-color: rgba(255, 255, 255, 0.6);
     transform: translateX(1500px);
-    width: 100%;
-    max-height: 30%;
-    /* overflow: scroll; */
 }
 
-.imgc__overview--text {
 
+.imgc__overview a {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: unset;
+}
+
+.modalDlg {
+    display: flex;
+    /* justify-content: flex-end; */
+    margin: .3rem;
+    /* flex-direction: row; 
+    flex-wrap: wrap;
+     */
+    /* justify-content: flex-end; */
+    /* z-index: 10; */
+    /* border: 1px solid green; */
+
+}
+
+/* Playing with margin, padding */
+.modalDlg {
+    margin: .5rem;
+}
+
+#modal {
+    padding-bottom: 2rem;
+    /* border: 1px solid green; */
+}
+
+.modalDlg:last-child .btn {
+    /* margin-bottom: 2rem; */
+    background-color: greenyellow !important;
+    color: black;
+}
+
+.imgc__item .btn {
+    padding: .3rem;
+    border-radius: 20px !important;
+    outline: none !important;
+}
+
+.modal-dialog {
+    background-color: greenyellow;
 }
